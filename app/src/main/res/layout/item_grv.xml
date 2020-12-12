@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/sanpham_row"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/igmilk_334"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cookie'n Cream"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#474444"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tenmilk_334"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="39.000đ"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#BECF23"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/giamilk_334"/>
+
+
+</LinearLayout>

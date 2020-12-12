@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ig_back334"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_west_24"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Chọn món"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabcoffee_334"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/search_355"
+            android:background="#fff"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#BECF23"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="0dp"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="#CDCDCD" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/Vpcoffee_334"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:gravity="bottom"
+            android:id="@+id/giohang334"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/viengiohang334"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:id="@+id/tongtiengiohang334"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="36000"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_toRightOf="@+id/tongtiengiohang334"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:text="."
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_toRightOf="@id/tongtiengiohang334"
+                android:id="@+id/slggiohang334"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="4 món"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/xemgiohang334"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="Xem giỏ hàng"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
